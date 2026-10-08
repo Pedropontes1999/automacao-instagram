@@ -1,0 +1,34 @@
+name: Postar video automatico
+
+on:
+  schedule:
+    - cron: '0,20,40 13-20 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  postar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Rodar postagem
+        env:
+          PAGE_TOKEN: ${{ secrets.PAGE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node postar.js
+
+      - name: Salvar estado atualizado
+        run: |
+          git config user.name "automacao-instagram"
+          git config user.email "automacao@users.noreply.github.com"
+          git add -f estado.json postar.log
+          git diff --cached --quiet || git commit -m "Atualiza estado da automacao"
+          git push
