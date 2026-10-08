@@ -1,8 +1,9 @@
 name: Postar video automatico
 
 on:
-  schedule:
-    - cron: '4,24,44 13-20 * * *'
+  # O "schedule" nativo do GitHub tem um bug conhecido em repositorios privados novos
+  # (nunca dispara). O agendamento real agora vem de um cron externo (cron-job.org)
+  # chamando a API de workflow_dispatch nos horarios certos.
   workflow_dispatch: {}
 
 concurrency:
