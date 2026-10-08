@@ -3,19 +3,27 @@ const path = require('path');
 const { execSync } = require('child_process');
 
 const BASE = __dirname;
-const cfg = JSON.parse(fs.readFileSync(path.join(BASE, 'config.json'), 'utf8'));
-const estado = JSON.parse(fs.readFileSync(path.join(BASE, 'estado.json'), 'utf8'));
-const legendas = JSON.parse(fs.readFileSync(path.join(BASE, 'legendas.json'), 'utf8'));
-const videoUrls = JSON.parse(fs.readFileSync(path.join(BASE, 'video_urls.json'), 'utf8'));
-const pageToken = process.env.PAGE_TOKEN || fs.readFileSync(path.join(BASE, 'segredos', 'page_token.txt'), 'utf8').trim();
-const capaUrl = fs.readFileSync(path.join(BASE, 'capa_url.txt'), 'utf8').trim();
+const CONTA = process.argv[2] || process.env.CONTA || 'conta1';
+const CONTA_DIR = path.join(BASE, 'contas', CONTA);
+
+if (!fs.existsSync(CONTA_DIR)) {
+  console.error(`Conta "${CONTA}" nao encontrada em contas/${CONTA}. Contas disponiveis: ${fs.readdirSync(path.join(BASE, 'contas')).join(', ')}`);
+  process.exit(1);
+}
+
+const cfg = JSON.parse(fs.readFileSync(path.join(CONTA_DIR, 'config.json'), 'utf8'));
+const estado = JSON.parse(fs.readFileSync(path.join(CONTA_DIR, 'estado.json'), 'utf8'));
+const legendas = JSON.parse(fs.readFileSync(path.join(CONTA_DIR, 'legendas.json'), 'utf8'));
+const videoUrls = JSON.parse(fs.readFileSync(path.join(CONTA_DIR, 'video_urls.json'), 'utf8'));
+const pageToken = process.env.PAGE_TOKEN || fs.readFileSync(path.join(BASE, 'segredos', `${CONTA}_page_token.txt`), 'utf8').trim();
+const capaUrl = fs.readFileSync(path.join(CONTA_DIR, 'capa_url.txt'), 'utf8').trim();
 
 const GRAPH = 'https://graph.facebook.com/v21.0';
 const LOG_FILE = path.join(BASE, 'postar.log');
 const NA_NUVEM = process.env.GITHUB_ACTIONS === 'true';
 
 function log(msg) {
-  const line = `[${new Date().toISOString()}] ${msg}`;
+  const line = `[${new Date().toISOString()}] [${CONTA}] ${msg}`;
   console.log(line);
   try { fs.appendFileSync(LOG_FILE, line + '\n'); } catch (e) { /* sistema de arquivos read-only em alguns runners */ }
 }
@@ -30,7 +38,7 @@ async function avisarViaIssue(titulo, mensagem) {
       Authorization: `Bearer ${token}`,
       Accept: 'application/vnd.github+json',
     },
-    body: JSON.stringify({ title: titulo, body: mensagem }),
+    body: JSON.stringify({ title: `[${CONTA}] ${titulo}`, body: mensagem }),
   });
   if (!res.ok) log(`Falha ao criar issue: ${res.status} ${await res.text()}`);
 }
@@ -41,12 +49,12 @@ function avisar(titulo, mensagem) {
     return;
   }
   try {
-    const script = `Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('${mensagem.replace(/'/g, "''")}', '${titulo.replace(/'/g, "''")}')`;
+    const script = `Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('${mensagem.replace(/'/g, "''")}', '${`[${CONTA}] ${titulo}`.replace(/'/g, "''")}')`;
     execSync(`powershell -NoProfile -Command "${script}"`, { stdio: 'ignore' });
   } catch (e) {
     log(`Falha ao mostrar aviso: ${e.message}`);
   }
-  try { fs.writeFileSync(path.join(BASE, `AVISO_${Date.now()}.txt`), `${titulo}\n\n${mensagem}`); } catch (e) { /* ignore */ }
+  try { fs.writeFileSync(path.join(BASE, `AVISO_${CONTA}_${Date.now()}.txt`), `${titulo}\n\n${mensagem}`); } catch (e) { /* ignore */ }
 }
 
 async function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
@@ -86,7 +94,7 @@ async function publicar(containerId) {
 }
 
 function salvarEstado() {
-  fs.writeFileSync(path.join(BASE, 'estado.json'), JSON.stringify(estado, null, 2));
+  fs.writeFileSync(path.join(CONTA_DIR, 'estado.json'), JSON.stringify(estado, null, 2));
 }
 
 async function main() {

@@ -1,0 +1,21 @@
+Pasta da conta 2. Ainda falta preencher antes de ativar essa conta:
+
+1. config.json       -> copie o formato de contas/conta1/config.json com
+                         app_id, page_id, ig_user_id, ig_username,
+                         cloudinary_cloud_name da conta 2.
+2. estado.json        -> copie o formato de contas/conta1/estado.json
+                         (proximo_video, video_maximo, posts_no_lote_atual,
+                         lote_atual, tamanho_lote) comecando do video 1.
+3. legendas.json       -> legendas/lotes da conta 2.
+4. video_urls.json     -> mapa "numero do video" -> URL no Cloudinary.
+5. capa_url.txt        -> URL da imagem de capa no Cloudinary.
+
+Fora desta pasta, falta ainda:
+- segredos/conta2_page_token.txt (uso local) com o Page Token de longa
+  duracao da conta 2 (mesmo App do Meta for Developers, Pagina diferente).
+- Secret do GitHub Actions: PAGE_TOKEN_CONTA2 (mesmo valor do arquivo
+  acima), em Settings > Secrets and variables > Actions.
+- Um segundo job no cron-job.org chamando o mesmo endpoint de
+  workflow_dispatch, mas com o body {"ref":"main","inputs":{"conta":"conta2"}}.
+
+Depois disso, basta apagar este arquivo.
