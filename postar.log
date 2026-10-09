@@ -104,3 +104,5 @@
 [2026-10-09T15:01:11.515Z] [conta1] OK - video_856 publicado. media_id=17910897171556129
 [2026-10-09T16:00:28.801Z] [conta1] Postando video_857 (lote 5, post 2/12)
 [2026-10-09T16:01:08.364Z] [conta1] OK - video_857 publicado. media_id=17891535261654704
+[2026-10-09T17:00:31.561Z] [conta1] Postando video_858 (lote 5, post 3/12)
+[2026-10-09T17:00:31.761Z] [conta1] FALHOU video_858: {"message":"Cannot call API for app 2202672190681648 on behalf of user 122120753295306511","type":"OAuthException","code":200,"fbtrace_id":"AbynZsmsKlZAGOEGP_oGNgt"}
