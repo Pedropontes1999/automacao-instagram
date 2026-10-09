@@ -58,3 +58,5 @@
 [2026-10-09T03:01:11.726Z] [conta1] OK - video_835 publicado. media_id=18166106614467575
 [2026-10-09T03:30:26.239Z] [conta1] Postando video_836 (lote 3, post 5/12)
 [2026-10-09T03:31:09.060Z] [conta1] OK - video_836 publicado. media_id=18108956534071651
+[2026-10-09T04:00:34.811Z] [conta1] Postando video_837 (lote 3, post 6/12)
+[2026-10-09T04:01:07.259Z] [conta1] FALHOU video_837: fetch failed
