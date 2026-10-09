@@ -108,3 +108,5 @@
 [2026-10-09T17:00:31.761Z] [conta1] FALHOU video_858: {"message":"Cannot call API for app 2202672190681648 on behalf of user 122120753295306511","type":"OAuthException","code":200,"fbtrace_id":"AbynZsmsKlZAGOEGP_oGNgt"}
 [2026-10-09T19:00:28.014Z] [conta1] Postando video_858 (lote 5, post 3/12)
 [2026-10-09T19:00:28.303Z] [conta1] FALHOU video_858: {"message":"Cannot call API for app 2202672190681648 on behalf of user 122120753295306511","type":"OAuthException","code":200,"fbtrace_id":"Aynw1D8A5wNQyxg6U-DB-BR"}
+[2026-10-09T19:21:58.218Z] [conta1] Postando video_858 (lote 5, post 3/12)
+[2026-10-09T19:23:17.774Z] [conta1] OK - video_858 publicado. media_id=18145938577568243
