@@ -356,3 +356,6 @@
 [2026-10-12T09:31:05.831Z] [conta1] OK - video_926 publicado. media_id=17957660136339659
 [2026-10-12T09:45:23.285Z] [conta2] Postando video_40 (lote 4, post 4/12)
 [2026-10-12T09:45:51.851Z] [conta2] OK - video_40 publicado. media_id=18022382378866840
+[2026-10-12T09:50:25.036Z] [conta3] Postando video_12 (lote 1, post 12/12)
+[2026-10-12T09:51:08.217Z] [conta3] OK - video_12 publicado. media_id=18127712314846445
+[2026-10-12T09:51:08.217Z] [conta3] Legenda trocou para o lote 2. Atualize a bio.
