@@ -305,3 +305,5 @@
 [2026-10-12T05:00:57.211Z] [conta1] OK - video_919 publicado. media_id=17910595944307709
 [2026-10-12T05:15:18.610Z] [conta2] Postando video_31 (lote 3, post 7/12)
 [2026-10-12T05:15:58.819Z] [conta2] OK - video_31 publicado. media_id=17990274263858251
+[2026-10-12T05:20:23.262Z] [conta3] Postando video_3 (lote 1, post 3/12)
+[2026-10-12T05:21:25.745Z] [conta3] OK - video_3 publicado. media_id=17924963457200304
