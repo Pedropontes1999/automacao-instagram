@@ -806,3 +806,6 @@
 [2026-10-13T21:31:06.223Z] [conta1] OK - video_998 publicado. media_id=18127895167861790
 [2026-10-13T21:45:19.854Z] [conta2] Postando video_112 (lote 10, post 4/12)
 [2026-10-13T21:46:02.172Z] [conta2] OK - video_112 publicado. media_id=17931100257164093
+[2026-10-13T21:50:21.898Z] [conta3] Postando video_84 (lote 7, post 12/12)
+[2026-10-13T21:51:04.075Z] [conta3] OK - video_84 publicado. media_id=18118465480977192
+[2026-10-13T21:51:04.075Z] [conta3] Legenda trocou para o lote 8. Atualize a bio.
