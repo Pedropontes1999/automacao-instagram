@@ -1043,3 +1043,5 @@
 [2026-10-14T16:16:23.265Z] [conta2] OK - video_148 publicado. media_id=18150809074562050
 [2026-10-14T16:20:23.046Z] [conta3] Postando video_121 (lote 11, post 1/12)
 [2026-10-14T16:20:45.508Z] [conta3] FALHOU video_121: {"message":"Media ID is not available","type":"OAuthException","code":9007,"error_subcode":2207027,"is_transient":false,"error_user_title":"Não é possível publicar","error_user_msg":"A mídia não está pronta para ser publicada. Aguarde um momento.","fbtrace_id":"ANMYeb_XVp5MqO0ZxilfrrD"}
+[2026-10-14T16:30:24.384Z] [conta1] Postando video_1036 (lote 20, post 1/12)
+[2026-10-14T16:31:38.267Z] [conta1] OK - video_1036 publicado. media_id=17905150326580730
