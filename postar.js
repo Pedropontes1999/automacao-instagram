@@ -1,3 +1,4 @@
+// robo-versao: 2 (o painel nunca troca o robô por um de versão menor)
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
@@ -119,18 +120,19 @@ function salvarEstado() {
   fs.writeFileSync(path.join(CONTA_DIR, 'estado.json'), JSON.stringify(estado, null, 2));
 }
 
-async function main() {
+// Posta o próximo vídeo da fila. Retorna false quando não deu (fila vazia, sem URL ou falha).
+async function postarUm() {
   if (estado.proximo_video > estado.video_maximo) {
     log('Nenhum vídeo restante para postar.');
     avisar(T.acabou[0], T.acabou[1]);
-    return;
+    return false;
   }
 
   const num = estado.proximo_video;
   const videoUrl = videoUrls[String(num)];
   if (!videoUrl) {
     log(`video_${num} não tem URL no Cloudinary ainda. Abortando.`);
-    return;
+    return false;
   }
 
   const legendaObj = legendas.length ? legendas[(estado.lote_atual - 1) % legendas.length] : { legenda: '' };
@@ -144,7 +146,7 @@ async function main() {
   } catch (e) {
     log(`FALHOU video_${num}: ${e.message}`);
     avisar(T.falha[0], T.falha[1](num, e.message));
-    return;
+    return false;
   }
 
   estado.proximo_video += 1;
@@ -167,6 +169,21 @@ async function main() {
   }
 
   salvarEstado();
+  return true;
+}
+
+// Postagem em massa: config.json "posts_por_vez" (ex.: 10 às 20h). O botão de teste do painel
+// manda QUANTIDADE=1. O primeiro erro encerra a rodada; o resto fica pro próximo horário.
+async function main() {
+  const quantidade = Math.max(1, Math.min(50, Number(process.env.QUANTIDADE) || Number(cfg.posts_por_vez) || 1));
+  if (quantidade > 1) log(`Rodada em massa: até ${quantidade} vídeos.`);
+  for (let i = 0; i < quantidade; i++) {
+    if (i > 0) {
+      if (estado.proximo_video > estado.video_maximo) { log('Fila acabou no meio da rodada.'); break; }
+      await sleep(20000); // respiro entre posts seguidos
+    }
+    if (!(await postarUm())) break;
+  }
 }
 
 main().catch(e => {
