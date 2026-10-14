@@ -875,3 +875,5 @@
 [2026-10-14T03:01:01.729Z] [conta1] OK - video_1009 publicado. media_id=18135574594646359
 [2026-10-14T03:15:21.538Z] [conta2] Postando video_123 (lote 11, post 3/12)
 [2026-10-14T03:16:04.248Z] [conta2] OK - video_123 publicado. media_id=18112816522860981
+[2026-10-14T03:20:23.223Z] [conta3] Postando video_95 (lote 8, post 11/12)
+[2026-10-14T03:21:02.795Z] [conta3] OK - video_95 publicado. media_id=18105221021339914
