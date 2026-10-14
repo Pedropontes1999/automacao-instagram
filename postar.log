@@ -964,3 +964,5 @@
 [2026-10-14T10:01:04.559Z] [conta1] Legenda trocou para o lote 19. Atualize a bio.
 [2026-10-14T10:15:23.264Z] [conta2] Postando video_137 (lote 12, post 5/12)
 [2026-10-14T10:15:55.240Z] [conta2] FALHOU video_137: fetch failed
+[2026-10-14T10:20:23.049Z] [conta3] Postando video_109 (lote 10, post 1/12)
+[2026-10-14T10:21:02.757Z] [conta3] OK - video_109 publicado. media_id=18093940205162862
