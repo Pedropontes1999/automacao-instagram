@@ -4,5 +4,6 @@
   "page_id": "1339005532632253",
   "app_id": "2202672190681648",
   "cloudinary_cloud_name": "f3e3jcnv",
-  "idioma": "pt"
+  "idioma": "pt",
+  "posts_por_vez": 6
 }
