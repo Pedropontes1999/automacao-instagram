@@ -962,3 +962,5 @@
 [2026-10-14T10:00:25.683Z] [conta1] Postando video_1023 (lote 18, post 12/12)
 [2026-10-14T10:01:04.558Z] [conta1] OK - video_1023 publicado. media_id=18092213534673545
 [2026-10-14T10:01:04.559Z] [conta1] Legenda trocou para o lote 19. Atualize a bio.
+[2026-10-14T10:15:23.264Z] [conta2] Postando video_137 (lote 12, post 5/12)
+[2026-10-14T10:15:55.240Z] [conta2] FALHOU video_137: fetch failed
