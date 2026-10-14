@@ -966,3 +966,5 @@
 [2026-10-14T10:15:55.240Z] [conta2] FALHOU video_137: fetch failed
 [2026-10-14T10:20:23.049Z] [conta3] Postando video_109 (lote 10, post 1/12)
 [2026-10-14T10:21:02.757Z] [conta3] OK - video_109 publicado. media_id=18093940205162862
+[2026-10-14T10:30:24.650Z] [conta1] Postando video_1024 (lote 19, post 1/12)
+[2026-10-14T10:31:05.603Z] [conta1] OK - video_1024 publicado. media_id=18094379936680053
