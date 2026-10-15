@@ -47,7 +47,7 @@ jobs:
         run: |
           git config user.name "automacao-instagram"
           git config user.email "automacao@users.noreply.github.com"
-          git add -f "contas/$CONTA/estado.json" postar.log
+          git add -f "contas/$CONTA" postar.log
           git diff --cached --quiet || git commit -m "Atualiza estado da automacao ($CONTA)"
           for i in 1 2 3 4 5; do
             git push && exit 0

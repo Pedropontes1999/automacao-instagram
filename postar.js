@@ -1,4 +1,4 @@
-// robo-versao: 3 (o painel nunca troca o robô por um de versão menor)
+// robo-versao: 4 (o painel nunca troca o robô por um de versão menor)
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
@@ -200,6 +200,132 @@ async function postarUm() {
   return true;
 }
 
+// ------------------------------------------------------------------ métricas e respostas
+// Rodam depois do post, a cada disparo. Erro aqui nunca atrapalha a postagem.
+
+async function graphGet(caminho, params = {}) {
+  const q = new URLSearchParams({ ...params, access_token: pageToken });
+  const res = await fetch(`${GRAPH}/${caminho}${caminho.includes('?') ? '&' : '?'}${q}`);
+  const data = await res.json();
+  if (data.error) { const e = new Error(data.error.message); e.code = data.error.code; throw e; }
+  return data;
+}
+// 10/200 = token sem a permissão (gerado antes das permissões novas do passo 4).
+const semPermissao = (e) => e.code === 10 || e.code === 200 || /permission/i.test(e.message);
+const lerJSON = (nome, def) => { try { return JSON.parse(fs.readFileSync(path.join(CONTA_DIR, nome), 'utf8')); } catch { return def; } };
+const gravarJSON = (nome, obj) => fs.writeFileSync(path.join(CONTA_DIR, nome), JSON.stringify(obj, null, 2) + '\n');
+
+// metricas.json: o painel monta os gráficos do Início com isso.
+async function atualizarMetricas() {
+  const antes = lerJSON('metricas.json', {});
+  const perfil = await graphGet(cfg.ig_user_id, { fields: 'followers_count,media_count' });
+  const campos = 'id,timestamp,permalink,like_count,comments_count';
+  let midias = [], erro = null;
+  try {
+    // views só vem com instagram_manage_insights
+    const r = await graphGet(`${cfg.ig_user_id}/media`, { fields: `${campos},insights.metric(views)`, limit: '30' });
+    midias = r.data || [];
+  } catch (e) {
+    if (!semPermissao(e) && e.code !== 100) throw e;
+    erro = 'sem_insights';
+    midias = (await graphGet(`${cfg.ig_user_id}/media`, { fields: campos, limit: '30' })).data || [];
+  }
+  const hoje = new Date().toISOString().slice(0, 10);
+  const historico = { ...(antes.historico || {}), [hoje]: perfil.followers_count };
+  const dias = Object.keys(historico).sort().slice(-90);
+  gravarJSON('metricas.json', {
+    atualizado: new Date().toISOString(),
+    seguidores: perfil.followers_count ?? null,
+    total_posts: perfil.media_count ?? null,
+    erro,
+    midias: midias.map((m) => ({
+      id: m.id, data: m.timestamp, link: m.permalink,
+      views: m.insights?.data?.find((i) => i.name === 'views')?.values?.[0]?.value ?? null,
+      likes: m.like_count ?? null, comentarios: m.comments_count ?? null,
+    })),
+    historico: Object.fromEntries(dias.map((d) => [d, historico[d]])),
+  });
+}
+
+// Resposta automática: config.json "resposta_auto" = { texto, antigos, desde }.
+// Várias mensagens separadas por linha em branco: o robô sorteia uma (texto
+// idêntico em massa é o que o Instagram mais trata como spam).
+const RESPOSTAS_POR_RODADA = 30;
+const REVARRER_DIAS = 3; // depois de varrer tudo, recomeça pra pegar comentário novo em post antigo
+
+async function responderComentarios() {
+  const ra = cfg.resposta_auto;
+  const opcoes = String(ra?.texto || '').split(/\n\s*\n/).map((t) => t.trim()).filter(Boolean);
+  if (!opcoes.length) return;
+  // comentarios.json = resumo pequeno (o painel lê); respondidos.json = ids já respondidos
+  const st = lerJSON('comentarios.json', {});
+  const feitos = new Set(lerJSON('respondidos.json', []));
+  const eu = String(cfg.ig_username || '').toLowerCase();
+  const desde = ra.antigos ? 0 : Date.parse(ra.desde || 0) || 0;
+  let enviados = 0;
+
+  const responderMidia = async (midiaId) => {
+    let url = `${midiaId}/comments`, params = { fields: 'id,username,timestamp,replies{username}', limit: '50' };
+    while (url && enviados < RESPOSTAS_POR_RODADA) {
+      const r = await graphGet(url, params);
+      for (const c of r.data || []) {
+        if (enviados >= RESPOSTAS_POR_RODADA) return false;
+        if (feitos.has(c.id) || String(c.username || '').toLowerCase() === eu) continue;
+        if (Date.parse(c.timestamp) < desde) continue;
+        if ((c.replies?.data || []).some((x) => String(x.username || '').toLowerCase() === eu)) { feitos.add(c.id); continue; }
+        const msg = opcoes[Math.floor(Math.random() * opcoes.length)];
+        const res = await fetch(`${GRAPH}/${c.id}/replies?${new URLSearchParams({ message: msg, access_token: pageToken })}`, { method: 'POST' });
+        const data = await res.json();
+        if (data.error) {
+          if (data.error.code === 10 || data.error.code === 200) { const e = new Error(data.error.message); e.code = data.error.code; throw e; }
+          feitos.add(c.id); // comentário apagado/restrito: não insiste
+          continue;
+        }
+        feitos.add(c.id); enviados++;
+        await sleep(4000);
+      }
+      const prox = r.paging?.cursors?.after;
+      if (!r.paging?.next || !prox) return true;
+      url = `${midiaId}/comments`; params = { ...params, after: prox };
+    }
+    return enviados < RESPOSTAS_POR_RODADA;
+  };
+
+  try {
+    // 1) posts mais novos: comentários recentes primeiro
+    const novos = await graphGet(`${cfg.ig_user_id}/media`, { fields: 'id,comments_count', limit: '25' });
+    for (const m of novos.data || []) {
+      if (m.comments_count && !(await responderMidia(m.id))) break;
+    }
+    // 2) varredura dos posts antigos, 25 por rodada, continuando de onde parou
+    if (ra.antigos && enviados < RESPOSTAS_POR_RODADA) {
+      const v = st.varredura || {};
+      if (v.fim && Date.now() - Date.parse(v.fim) > REVARRER_DIAS * 86400000) { delete v.fim; delete v.depois; }
+      if (!v.fim) {
+        const pagina = await graphGet(`${cfg.ig_user_id}/media`, { fields: 'id,comments_count', limit: '25', ...(v.depois ? { after: v.depois } : {}) });
+        let completa = true;
+        for (const m of pagina.data || []) {
+          if (m.comments_count && !(await responderMidia(m.id))) { completa = false; break; }
+        }
+        if (completa) {
+          v.posts_varridos = (v.posts_varridos || 0) + (pagina.data || []).length;
+          if (pagina.paging?.next && pagina.paging?.cursors?.after) v.depois = pagina.paging.cursors.after;
+          else { v.fim = new Date().toISOString(); delete v.depois; }
+        }
+      }
+      st.varredura = v;
+    }
+    st.erro = null;
+  } catch (e) {
+    st.erro = semPermissao(e) ? 'sem_permissao' : e.message;
+  }
+  fs.writeFileSync(path.join(CONTA_DIR, 'respondidos.json'), JSON.stringify([...feitos].slice(-30000)) + '\n');
+  st.total = (st.total || 0) + enviados;
+  st.atualizado = new Date().toISOString();
+  gravarJSON('comentarios.json', st);
+  if (enviados) log(`Respondi ${enviados} comentário(s).`);
+}
+
 // Postagem em massa: config.json "posts_por_vez" (ex.: 10 às 20h). O botão de teste do painel
 // manda QUANTIDADE=1. O primeiro erro encerra a rodada; o resto fica pro próximo horário.
 async function main() {
@@ -212,6 +338,8 @@ async function main() {
     }
     if (!(await postarUm())) break;
   }
+  await atualizarMetricas().catch((e) => log(`Métricas não atualizaram: ${e.message}`));
+  await responderComentarios().catch((e) => log(`Respostas automáticas falharam: ${e.message}`));
 }
 
 main().catch(e => {
