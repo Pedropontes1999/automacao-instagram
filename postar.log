@@ -1218,3 +1218,5 @@
 [2026-10-15T06:16:05.652Z] [conta2] OK - video_176 publicado. media_id=18132481021743344
 [2026-10-15T06:20:23.609Z] [conta3] Postando video_148 (lote 13, post 4/12)
 [2026-10-15T06:21:16.675Z] [conta3] FALHOU video_148: {"message":"An unexpected error has occurred. Please retry your request later.","type":"OAuthException","is_transient":true,"code":2,"fbtrace_id":"Aa37dgN1LZB5X9lsF94qTFC"}
+[2026-10-15T06:30:29.550Z] [conta4] Postando video_13 (lote 2, post 1/12)
+[2026-10-15T06:30:52.795Z] [conta4] FALHOU video_13: {"code":1,"message":"Please reduce the amount of data you're asking for, then retry your request"}
