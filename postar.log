@@ -1222,3 +1222,5 @@
 [2026-10-15T06:30:52.795Z] [conta4] FALHOU video_13: {"code":1,"message":"Please reduce the amount of data you're asking for, then retry your request"}
 [2026-10-15T06:45:19.443Z] [conta2] Postando video_177 (lote 15, post 9/12)
 [2026-10-15T06:46:10.029Z] [conta2] OK - video_177 publicado. media_id=18442667305132444
+[2026-10-15T06:50:22.315Z] [conta3] Postando video_148 (lote 13, post 4/12)
+[2026-10-15T06:51:05.694Z] [conta3] OK - video_148 publicado. media_id=18073277036727150
