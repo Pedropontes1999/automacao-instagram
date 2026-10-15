@@ -1419,3 +1419,5 @@
 [2026-10-15T22:20:22.821Z] [conta3] Postando video_179 (lote 15, post 11/12)
 [2026-10-15T22:21:27.766Z] [conta3] FALHOU video_179: {"message":"Fatal","type":"OAuthException","code":-1,"error_subcode":2207085,"is_transient":false,"error_user_title":"Erro interno genérico","error_user_msg":"Ocorreu um erro interno do servidor. Tente novamente mais tarde.","fbtrace_id":"Anj1geD0r1KScBZacV8IVfT"}
 [2026-10-15T22:21:28.207Z] [conta3] Aviso "[conta3] Falha ao postar" já está aberto.
+[2026-10-15T22:30:27.213Z] [conta4] Postando video_22 (lote 2, post 10/12)
+[2026-10-15T22:31:26.171Z] [conta4] OK - video_22 publicado. media_id=18002060342809430
