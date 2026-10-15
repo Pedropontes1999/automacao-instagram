@@ -47,6 +47,9 @@ jobs:
         run: |
           git config user.name "automacao-instagram"
           git config user.email "automacao@users.noreply.github.com"
+          # Duas contas no mesmo minuto acrescentam linhas no postar.log: junta as duas em vez de dar conflito
+          # (sem isso o estado de uma delas não salvava e ela repostava o mesmo vídeo).
+          echo "postar.log merge=union" >> .git/info/attributes
           git add -f "contas/$CONTA" postar.log
           git diff --cached --quiet || git commit -m "Atualiza estado da automacao ($CONTA)"
           for i in 1 2 3 4 5; do

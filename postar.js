@@ -1,4 +1,4 @@
-// robo-versao: 5 (o painel nunca troca o robô por um de versão menor)
+// robo-versao: 6 (o painel nunca troca o robô por um de versão menor)
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
