@@ -50,8 +50,11 @@ jobs:
           git add -f "contas/$CONTA/estado.json" postar.log
           git diff --cached --quiet || git commit -m "Atualiza estado da automacao ($CONTA)"
           for i in 1 2 3 4 5; do
-            git push && break
+            git push && exit 0
             echo "push rejeitado, tentando de novo (tentativa $i)..."
-            git pull --rebase origin main
+            git pull --rebase origin main || git rebase --abort
             sleep 3
           done
+          # Sem salvar o estado o proximo horario repete o video: melhor o run ficar vermelho.
+          echo "::error::Nao consegui salvar o estado.json; o proximo horario pode repetir o video."
+          exit 1

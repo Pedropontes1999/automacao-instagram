@@ -1,4 +1,4 @@
-// robo-versao: 2 (o painel nunca troca o robô por um de versão menor)
+// robo-versao: 3 (o painel nunca troca o robô por um de versão menor)
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
@@ -116,6 +116,28 @@ async function publicar(containerId) {
   return data.id;
 }
 
+// A Meta às vezes devolve erro no media_publish ("Fatal", "Media ID is not available",
+// "unexpected error") mas publica mesmo assim. Sem conferir, o próximo horário postava o
+// mesmo vídeo de novo. O container vira PUBLISHED quando o post saiu.
+async function foiPublicado(containerId, inicio) {
+  for (let i = 0; i < 4; i++) {
+    await sleep(15000);
+    try {
+      const res = await fetch(`${GRAPH}/${containerId}?fields=status_code&access_token=${pageToken}`);
+      const data = await res.json();
+      if (data.status_code === 'PUBLISHED') return true;
+      if (!data.error) continue;
+    } catch (e) { /* rede: tenta pelo feed abaixo */ }
+    // Container ilegível: olha se apareceu post novo no perfil depois que a tentativa começou.
+    try {
+      const res = await fetch(`${GRAPH}/${cfg.ig_user_id}/media?fields=id,timestamp&limit=1&access_token=${pageToken}`);
+      const ultimo = (await res.json()).data?.[0];
+      if (ultimo && new Date(ultimo.timestamp).getTime() >= inicio - 60000) return true;
+    } catch (e) { /* tenta de novo */ }
+  }
+  return false;
+}
+
 function salvarEstado() {
   fs.writeFileSync(path.join(CONTA_DIR, 'estado.json'), JSON.stringify(estado, null, 2));
 }
@@ -138,15 +160,21 @@ async function postarUm() {
   const legendaObj = legendas.length ? legendas[(estado.lote_atual - 1) % legendas.length] : { legenda: '' };
   log(`Postando video_${num} (lote ${estado.lote_atual}, post ${estado.posts_no_lote_atual + 1}/${estado.tamanho_lote})`);
 
+  let containerId = null;
+  const inicio = Date.now();
   try {
-    const containerId = await criarContainer(videoUrl, legendaObj.legenda);
+    containerId = await criarContainer(videoUrl, legendaObj.legenda);
     await esperarProcessamento(containerId);
     const mediaId = await publicar(containerId);
     log(`OK - video_${num} publicado. media_id=${mediaId}`);
   } catch (e) {
-    log(`FALHOU video_${num}: ${e.message}`);
-    avisar(T.falha[0], T.falha[1](num, e.message));
-    return false;
+    if (containerId && await foiPublicado(containerId, inicio)) {
+      log(`OK - video_${num} publicado (a Meta respondeu erro, mas o post saiu: ${e.message})`);
+    } else {
+      log(`FALHOU video_${num}: ${e.message}`);
+      avisar(T.falha[0], T.falha[1](num, e.message));
+      return false;
+    }
   }
 
   estado.proximo_video += 1;
