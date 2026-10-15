@@ -1,4 +1,4 @@
-// robo-versao: 4 (o painel nunca troca o robô por um de versão menor)
+// robo-versao: 5 (o painel nunca troca o robô por um de versão menor)
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
@@ -250,7 +250,10 @@ async function atualizarMetricas() {
 // Resposta automática: config.json "resposta_auto" = { texto, antigos, desde }.
 // Várias mensagens separadas por linha em branco: o robô sorteia uma (texto
 // idêntico em massa é o que o Instagram mais trata como spam).
-const RESPOSTAS_POR_RODADA = 30;
+// Ritmo de gente, não de robô: resposta rápida em massa leva "bloqueio de ação" do Instagram.
+const RESPOSTAS_POR_RODADA = 15;
+const RESPOSTAS_POR_DIA = 200;
+const ESPERA_MIN = 20000, ESPERA_MAX = 45000; // sorteada entre uma resposta e outra
 const REVARRER_DIAS = 3; // depois de varrer tudo, recomeça pra pegar comentário novo em post antigo
 
 async function responderComentarios() {
@@ -263,13 +266,17 @@ async function responderComentarios() {
   const eu = String(cfg.ig_username || '').toLowerCase();
   const desde = ra.antigos ? 0 : Date.parse(ra.desde || 0) || 0;
   let enviados = 0;
+  const dia = new Date().toISOString().slice(0, 10);
+  if (st.dia !== dia) { st.dia = dia; st.hoje = 0; }
+  const limite = Math.min(RESPOSTAS_POR_RODADA, RESPOSTAS_POR_DIA - st.hoje);
+  if (limite <= 0) return; // cota do dia cheia: continua amanhã
 
   const responderMidia = async (midiaId) => {
     let url = `${midiaId}/comments`, params = { fields: 'id,username,timestamp,replies{username}', limit: '50' };
-    while (url && enviados < RESPOSTAS_POR_RODADA) {
+    while (url && enviados < limite) {
       const r = await graphGet(url, params);
       for (const c of r.data || []) {
-        if (enviados >= RESPOSTAS_POR_RODADA) return false;
+        if (enviados >= limite) return false;
         if (feitos.has(c.id) || String(c.username || '').toLowerCase() === eu) continue;
         if (Date.parse(c.timestamp) < desde) continue;
         if ((c.replies?.data || []).some((x) => String(x.username || '').toLowerCase() === eu)) { feitos.add(c.id); continue; }
@@ -282,13 +289,13 @@ async function responderComentarios() {
           continue;
         }
         feitos.add(c.id); enviados++;
-        await sleep(4000);
+        if (enviados < limite) await sleep(ESPERA_MIN + Math.random() * (ESPERA_MAX - ESPERA_MIN));
       }
       const prox = r.paging?.cursors?.after;
       if (!r.paging?.next || !prox) return true;
       url = `${midiaId}/comments`; params = { ...params, after: prox };
     }
-    return enviados < RESPOSTAS_POR_RODADA;
+    return enviados < limite;
   };
 
   try {
@@ -298,7 +305,7 @@ async function responderComentarios() {
       if (m.comments_count && !(await responderMidia(m.id))) break;
     }
     // 2) varredura dos posts antigos, 25 por rodada, continuando de onde parou
-    if (ra.antigos && enviados < RESPOSTAS_POR_RODADA) {
+    if (ra.antigos && enviados < limite) {
       const v = st.varredura || {};
       if (v.fim && Date.now() - Date.parse(v.fim) > REVARRER_DIAS * 86400000) { delete v.fim; delete v.depois; }
       if (!v.fim) {
@@ -321,6 +328,7 @@ async function responderComentarios() {
   }
   fs.writeFileSync(path.join(CONTA_DIR, 'respondidos.json'), JSON.stringify([...feitos].slice(-30000)) + '\n');
   st.total = (st.total || 0) + enviados;
+  st.hoje += enviados;
   st.atualizado = new Date().toISOString();
   gravarJSON('comentarios.json', st);
   if (enviados) log(`Respondi ${enviados} comentário(s).`);
