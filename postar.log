@@ -1190,3 +1190,6 @@
 [2026-10-15T04:01:06.726Z] [conta1] OK - video_1050 publicado. media_id=18106245406971262
 [2026-10-15T04:15:20.473Z] [conta2] Postando video_172 (lote 15, post 4/12)
 [2026-10-15T04:16:24.584Z] [conta2] OK - video_172 publicado. media_id=18118232636057662
+[2026-10-15T04:20:23.259Z] [conta3] Postando video_144 (lote 12, post 12/12)
+[2026-10-15T04:21:05.838Z] [conta3] OK - video_144 publicado. media_id=18045276611820040
+[2026-10-15T04:21:05.839Z] [conta3] Legenda trocou para o lote 13. Atualize a bio.
