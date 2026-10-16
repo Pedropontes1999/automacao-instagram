@@ -1,7 +1,11 @@
 {
-  "dia": "2026-10-15",
-  "hoje": 15,
+  "dia": "2026-10-16",
+  "hoje": 3,
   "erro": null,
-  "total": 15,
-  "atualizado": "2026-10-15T23:55:57.331Z"
+  "total": 18,
+  "atualizado": "2026-10-16T00:18:19.341Z",
+  "varredura": {
+    "posts_varridos": 25,
+    "depois": "QVFIVGpsTHpaRU1wbm1zVW1fMU82ZAHVqX1E3MnY0aUEtbThCYXNkdmRORGVuT0huNXo4LUdfUnJvaUx2WV94WF85RGNseWxGOGFQTXFtSEI0ZAzhoVmhEeE9B"
+  }
 }
