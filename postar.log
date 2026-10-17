@@ -2319,3 +2319,5 @@
 [2026-10-17T23:30:59.001Z] [conta4] Legenda trocou para o lote 11. Atualize a bio.
 [2026-10-17T23:30:23.246Z] [conta1] Postando video_1172 (lote 31, post 5/12)
 [2026-10-17T23:31:05.111Z] [conta1] OK - video_1172 publicado. media_id=17989383036095860
+[2026-10-17T23:45:20.408Z] [conta2] Nenhum vídeo restante para postar.
+[2026-10-17T23:45:20.892Z] [conta2] Aviso "[conta2] Acabaram os vídeos" já está aberto.
