@@ -1,9 +1,17 @@
 {
-  "atualizado": "2026-10-17T20:31:09.143Z",
+  "atualizado": "2026-10-17T21:01:11.215Z",
   "seguidores": 2,
-  "total_posts": 145,
+  "total_posts": 146,
   "erro": null,
   "midias": [
+    {
+      "id": "18116022065099237",
+      "data": "2026-10-17T21:01:04+0000",
+      "link": "https://www.instagram.com/reel/DenBj_QDQLU/",
+      "views": 0,
+      "likes": 0,
+      "comentarios": 0
+    },
     {
       "id": "17999107833032070",
       "data": "2026-10-17T20:31:01+0000",
@@ -24,7 +32,7 @@
       "id": "18112362107595466",
       "data": "2026-10-17T19:30:59+0000",
       "link": "https://www.instagram.com/reel/Dem3QVmkyOo/",
-      "views": 47,
+      "views": 51,
       "likes": 0,
       "comentarios": 0
     },
@@ -32,7 +40,7 @@
       "id": "18108769520339068",
       "data": "2026-10-17T19:01:36+0000",
       "link": "https://www.instagram.com/reel/Demz6DRE2XO/",
-      "views": 61,
+      "views": 63,
       "likes": 0,
       "comentarios": 0
     },
@@ -56,16 +64,16 @@
       "id": "18659136736001024",
       "data": "2026-10-17T17:31:02+0000",
       "link": "https://www.instagram.com/reel/DempiAeiHgC/",
-      "views": 254,
-      "likes": 10,
+      "views": 335,
+      "likes": 14,
       "comentarios": 0
     },
     {
       "id": "17959118757012170",
       "data": "2026-10-17T17:01:06+0000",
       "link": "https://www.instagram.com/reel/DemmGTOgPUP/",
-      "views": 652,
-      "likes": 22,
+      "views": 656,
+      "likes": 23,
       "comentarios": 0
     },
     {
@@ -200,7 +208,7 @@
       "id": "18083308730513653",
       "data": "2026-10-17T08:31:00+0000",
       "link": "https://www.instagram.com/reel/DelruScFI8h/",
-      "views": 0,
+      "views": 5,
       "likes": 0,
       "comentarios": 0
     },
@@ -234,14 +242,6 @@
       "link": "https://www.instagram.com/reel/Deld_ueCHB1/",
       "views": 304,
       "likes": 6,
-      "comentarios": 0
-    },
-    {
-      "id": "18491320471128555",
-      "data": "2026-10-17T06:01:06+0000",
-      "link": "https://www.instagram.com/reel/DelakUngYqC/",
-      "views": 182,
-      "likes": 2,
       "comentarios": 0
     }
   ],
