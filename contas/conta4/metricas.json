@@ -1,9 +1,17 @@
 {
-  "atualizado": "2026-10-18T21:01:47.522Z",
+  "atualizado": "2026-10-18T21:31:10.833Z",
   "seguidores": 4,
-  "total_posts": 194,
+  "total_posts": 195,
   "erro": null,
   "midias": [
+    {
+      "id": "18114428534597936",
+      "data": "2026-10-18T21:31:03+0000",
+      "link": "https://www.instagram.com/reel/DeppyZsoN6s/",
+      "views": 0,
+      "likes": 0,
+      "comentarios": 0
+    },
     {
       "id": "18384276523233561",
       "data": "2026-10-18T21:01:39+0000",
@@ -16,7 +24,7 @@
       "id": "17871842874647626",
       "data": "2026-10-18T20:31:03+0000",
       "link": "https://www.instagram.com/reel/Depi7HAlTFX/",
-      "views": 0,
+      "views": 1,
       "likes": 0,
       "comentarios": 0
     },
@@ -32,7 +40,7 @@
       "id": "18125323639672240",
       "data": "2026-10-18T19:32:06+0000",
       "link": "https://www.instagram.com/reel/DepcJaWifBI/",
-      "views": 278,
+      "views": 280,
       "likes": 6,
       "comentarios": 0
     },
@@ -40,7 +48,7 @@
       "id": "18251384707308889",
       "data": "2026-10-18T19:01:06+0000",
       "link": "https://www.instagram.com/reel/DepYoRWDPap/",
-      "views": 311,
+      "views": 312,
       "likes": 8,
       "comentarios": 0
     },
@@ -56,7 +64,7 @@
       "id": "18081786719348043",
       "data": "2026-10-18T18:01:30+0000",
       "link": "https://www.instagram.com/reel/DepRzYIFLmm/",
-      "views": 1042,
+      "views": 1044,
       "likes": 32,
       "comentarios": 0
     },
@@ -64,7 +72,7 @@
       "id": "17917043763260975",
       "data": "2026-10-18T17:31:11+0000",
       "link": "https://www.instagram.com/reel/DepOUStDrd5/",
-      "views": 710,
+      "views": 711,
       "likes": 39,
       "comentarios": 0
     },
@@ -233,14 +241,6 @@
       "data": "2026-10-18T07:01:24+0000",
       "link": "https://www.instagram.com/reel/DeoGReODiIr/",
       "views": 0,
-      "likes": 0,
-      "comentarios": 0
-    },
-    {
-      "id": "18100164689419271",
-      "data": "2026-10-18T06:31:03+0000",
-      "link": "https://www.instagram.com/reel/DeoCyZ5DFUf/",
-      "views": 2,
       "likes": 0,
       "comentarios": 0
     }
