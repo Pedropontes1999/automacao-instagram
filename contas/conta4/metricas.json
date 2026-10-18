@@ -1,30 +1,38 @@
 {
-  "atualizado": "2026-10-18T20:01:45.407Z",
+  "atualizado": "2026-10-18T20:31:10.529Z",
   "seguidores": 4,
-  "total_posts": 192,
+  "total_posts": 193,
   "erro": null,
   "midias": [
+    {
+      "id": "17871842874647626",
+      "data": "2026-10-18T20:31:03+0000",
+      "link": "https://www.instagram.com/reel/Depi7HAlTFX/",
+      "views": 0,
+      "likes": 0,
+      "comentarios": 0
+    },
     {
       "id": "18100632143631965",
       "data": "2026-10-18T20:01:38+0000",
       "link": "https://www.instagram.com/reel/DepfkctmMnZ/",
-      "views": 0,
-      "likes": 0,
+      "views": 91,
+      "likes": 1,
       "comentarios": 0
     },
     {
       "id": "18125323639672240",
       "data": "2026-10-18T19:32:06+0000",
       "link": "https://www.instagram.com/reel/DepcJaWifBI/",
-      "views": 131,
-      "likes": 1,
+      "views": 273,
+      "likes": 6,
       "comentarios": 0
     },
     {
       "id": "18251384707308889",
       "data": "2026-10-18T19:01:06+0000",
       "link": "https://www.instagram.com/reel/DepYoRWDPap/",
-      "views": 309,
+      "views": 311,
       "likes": 8,
       "comentarios": 0
     },
@@ -40,7 +48,7 @@
       "id": "18081786719348043",
       "data": "2026-10-18T18:01:30+0000",
       "link": "https://www.instagram.com/reel/DepRzYIFLmm/",
-      "views": 1037,
+      "views": 1040,
       "likes": 32,
       "comentarios": 0
     },
@@ -48,7 +56,7 @@
       "id": "17917043763260975",
       "data": "2026-10-18T17:31:11+0000",
       "link": "https://www.instagram.com/reel/DepOUStDrd5/",
-      "views": 706,
+      "views": 710,
       "likes": 39,
       "comentarios": 0
     },
@@ -232,14 +240,6 @@
       "id": "18126638797659555",
       "data": "2026-10-18T06:01:48+0000",
       "link": "https://www.instagram.com/reel/Den_aeRjcYL/",
-      "views": 0,
-      "likes": 0,
-      "comentarios": 0
-    },
-    {
-      "id": "18640480408022211",
-      "data": "2026-10-18T05:30:59+0000",
-      "link": "https://www.instagram.com/reel/Den76zEDBF9/",
       "views": 0,
       "likes": 0,
       "comentarios": 0
