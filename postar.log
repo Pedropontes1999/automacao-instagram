@@ -2903,3 +2903,6 @@
 [2026-10-19T06:30:26.037Z] [conta1] Postando video_1234 (lote 36, post 7/12)
 [2026-10-19T06:31:09.954Z] [conta1] OK - video_1234 publicado. media_id=17996194284043651
 [2026-10-19T06:34:06.457Z] [conta1] Respondi 5 comentário(s).
+[2026-10-19T06:45:21.844Z] [conta2] Nenhum vídeo restante para postar.
+[2026-10-19T06:45:22.233Z] [conta2] Aviso "[conta2] Acabaram os vídeos" já está aberto.
+[2026-10-19T06:48:03.878Z] [conta2] Respondi 5 comentário(s).
