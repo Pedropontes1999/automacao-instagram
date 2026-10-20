@@ -1,14 +1,22 @@
 {
-  "atualizado": "2026-10-20T15:01:16.095Z",
+  "atualizado": "2026-10-20T15:31:19.641Z",
   "seguidores": 4,
-  "total_posts": 277,
+  "total_posts": 278,
   "erro": null,
   "midias": [
+    {
+      "id": "17902821621375445",
+      "data": "2026-10-20T15:31:09+0000",
+      "link": "https://www.instagram.com/reel/DeuKMJhigb5/",
+      "views": 0,
+      "likes": 0,
+      "comentarios": 0
+    },
     {
       "id": "18094699910172467",
       "data": "2026-10-20T15:01:08+0000",
       "link": "https://www.instagram.com/reel/DeuGwerFdG9/",
-      "views": 0,
+      "views": 8,
       "likes": 0,
       "comentarios": 0
     },
@@ -16,8 +24,8 @@
       "id": "18096668942123670",
       "data": "2026-10-20T14:31:05+0000",
       "link": "https://www.instagram.com/reel/DeuDUYiEuxl/",
-      "views": 11,
-      "likes": 0,
+      "views": 132,
+      "likes": 2,
       "comentarios": 0
     },
     {
@@ -56,7 +64,7 @@
       "id": "18452008144132657",
       "data": "2026-10-20T12:01:10+0000",
       "link": "https://www.instagram.com/reel/DetyKO_DFQP/",
-      "views": 114,
+      "views": 115,
       "likes": 3,
       "comentarios": 0
     },
@@ -88,7 +96,7 @@
       "id": "18089363645507956",
       "data": "2026-10-20T10:01:23+0000",
       "link": "https://www.instagram.com/reel/DetkbTEFNSn/",
-      "views": 128,
+      "views": 130,
       "likes": 4,
       "comentarios": 0
     },
@@ -160,7 +168,7 @@
       "id": "17908591215326881",
       "data": "2026-10-20T05:30:51+0000",
       "link": "https://www.instagram.com/reel/DetFgx5DF2S/",
-      "views": 44,
+      "views": 45,
       "likes": 1,
       "comentarios": 0
     },
@@ -232,14 +240,6 @@
       "id": "18625951246005475",
       "data": "2026-10-20T01:01:59+0000",
       "link": "https://www.instagram.com/reel/DesmuEagYfx/",
-      "views": 0,
-      "likes": 0,
-      "comentarios": 0
-    },
-    {
-      "id": "18112619408467102",
-      "data": "2026-10-20T00:31:21+0000",
-      "link": "https://www.instagram.com/reel/DesjMb5D62E/",
       "views": 0,
       "likes": 0,
       "comentarios": 0
