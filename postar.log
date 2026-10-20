@@ -3529,3 +3529,5 @@
 [2026-10-20T18:00:26.657Z] [conta1] Postando video_1305 (lote 42, post 6/12)
 [2026-10-20T18:02:11.680Z] [conta1] OK - video_1305 publicado. media_id=18177403909457259
 [2026-10-20T18:15:21.413Z] [conta2] Nenhum vídeo restante para postar.
+[2026-10-20T18:20:24.548Z] [conta3] Nenhum vídeo restante para postar.
+[2026-10-20T18:20:25.025Z] [conta3] Aviso "[conta3] Acabaram os vídeos" já está aberto.
