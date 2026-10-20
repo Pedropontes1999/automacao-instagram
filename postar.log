@@ -3543,3 +3543,5 @@
 [2026-10-20T19:01:13.937Z] [conta4] OK - video_255 publicado. media_id=18344955022284370
 [2026-10-20T19:00:28.250Z] [conta1] Postando video_1307 (lote 42, post 8/12)
 [2026-10-20T19:02:10.943Z] [conta1] OK - video_1307 publicado. media_id=18187071679420594
+[2026-10-20T19:15:22.230Z] [conta2] Nenhum vídeo restante para postar.
+[2026-10-20T19:15:22.651Z] [conta2] Aviso "[conta2] Acabaram os vídeos" já está aberto.
