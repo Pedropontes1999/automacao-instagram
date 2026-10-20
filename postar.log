@@ -3249,3 +3249,6 @@
 [2026-10-20T02:30:22.559Z] [conta1] Postando video_1274 (lote 39, post 11/12)
 [2026-10-20T02:31:05.137Z] [conta1] OK - video_1274 publicado. media_id=17999135924822966
 [2026-10-20T02:40:10.795Z] [conta1] Respondi 15 comentário(s).
+[2026-10-20T02:45:21.381Z] [conta2] Postando video_310 (lote 26, post 10/12)
+[2026-10-20T02:46:35.752Z] [conta2] FALHOU video_310: Processamento falhou no lado da Meta
+[2026-10-20T02:55:30.764Z] [conta2] Respondi 15 comentário(s).
