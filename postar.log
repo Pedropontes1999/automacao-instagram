@@ -3480,3 +3480,5 @@
 [2026-10-20T15:00:35.176Z] [conta1] Postando video_1299 (lote 41, post 12/12)
 [2026-10-20T15:01:18.929Z] [conta1] OK - video_1299 publicado. media_id=18143407120609366
 [2026-10-20T15:01:18.930Z] [conta1] Legenda trocou para o lote 42. Atualize a bio.
+[2026-10-20T15:15:23.706Z] [conta2] Nenhum vídeo restante para postar.
+[2026-10-20T15:15:24.203Z] [conta2] Aviso "[conta2] Acabaram os vídeos" já está aberto.
