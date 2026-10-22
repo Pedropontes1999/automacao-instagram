@@ -1,9 +1,17 @@
 {
-  "atualizado": "2026-10-22T14:31:13.854Z",
+  "atualizado": "2026-10-22T15:02:07.641Z",
   "seguidores": 4,
-  "total_posts": 371,
+  "total_posts": 372,
   "erro": null,
   "midias": [
+    {
+      "id": "18083580284519554",
+      "data": "2026-10-22T15:01:59+0000",
+      "link": "https://www.instagram.com/reel/DezQdOiknxx/",
+      "views": 0,
+      "likes": 0,
+      "comentarios": 0
+    },
     {
       "id": "18088933454293299",
       "data": "2026-10-22T14:31:05+0000",
@@ -16,7 +24,7 @@
       "id": "18153329017527482",
       "data": "2026-10-22T14:01:10+0000",
       "link": "https://www.instagram.com/reel/DezJfGZjFrv/",
-      "views": 0,
+      "views": 2,
       "likes": 0,
       "comentarios": 0
     },
@@ -24,7 +32,7 @@
       "id": "18114799721120925",
       "data": "2026-10-22T13:31:07+0000",
       "link": "https://www.instagram.com/reel/DezGCliEQJe/",
-      "views": 0,
+      "views": 1,
       "likes": 0,
       "comentarios": 0
     },
@@ -64,7 +72,7 @@
       "id": "17875669830636888",
       "data": "2026-10-22T11:01:08+0000",
       "link": "https://www.instagram.com/reel/Dey04ZKml9V/",
-      "views": 0,
+      "views": 1,
       "likes": 0,
       "comentarios": 0
     },
@@ -96,7 +104,7 @@
       "id": "18075038783768893",
       "data": "2026-10-22T09:01:56+0000",
       "link": "https://www.instagram.com/reel/DeynN1vDFdj/",
-      "views": 0,
+      "views": 1,
       "likes": 0,
       "comentarios": 0
     },
@@ -120,7 +128,7 @@
       "id": "18098228609112638",
       "data": "2026-10-22T07:31:43+0000",
       "link": "https://www.instagram.com/reel/Deyc6ONikCI/",
-      "views": 80,
+      "views": 81,
       "likes": 0,
       "comentarios": 0
     },
@@ -233,14 +241,6 @@
       "data": "2026-10-22T00:30:52+0000",
       "link": "https://www.instagram.com/reel/DexsxOeGBbj/",
       "views": 1,
-      "likes": 0,
-      "comentarios": 0
-    },
-    {
-      "id": "18156291034519194",
-      "data": "2026-10-22T00:01:11+0000",
-      "link": "https://www.instagram.com/reel/DexpWgjgbgy/",
-      "views": 0,
       "likes": 0,
       "comentarios": 0
     }
