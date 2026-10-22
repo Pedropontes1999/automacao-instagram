@@ -4391,3 +4391,6 @@
 [2026-10-22T17:50:28.467Z] [conta3] Aviso "[conta3] Acabaram os vídeos" já está aberto.
 [2026-10-22T18:00:25.546Z] [conta1] Postando video_1400 (lote 50, post 5/12)
 [2026-10-22T18:01:28.716Z] [conta1] OK - video_1400 publicado. media_id=18094943225679852
+[2026-10-22T18:00:33.011Z] [conta4] Postando video_348 (lote 29, post 12/12)
+[2026-10-22T18:01:35.341Z] [conta4] OK - video_348 publicado. media_id=18013583327974245
+[2026-10-22T18:01:35.342Z] [conta4] Legenda trocou para o lote 30. Atualize a bio.
