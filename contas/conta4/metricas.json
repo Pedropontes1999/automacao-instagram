@@ -1,9 +1,17 @@
 {
-  "atualizado": "2026-10-23T20:01:12.162Z",
+  "atualizado": "2026-10-23T20:31:21.605Z",
   "seguidores": 7,
-  "total_posts": 429,
+  "total_posts": 430,
   "erro": null,
   "midias": [
+    {
+      "id": "18373122760211785",
+      "data": "2026-10-23T20:31:11+0000",
+      "link": "https://www.instagram.com/reel/De2a57Jir85/",
+      "views": 0,
+      "likes": 0,
+      "comentarios": 0
+    },
     {
       "id": "18162330718495109",
       "data": "2026-10-23T20:00:59+0000",
@@ -112,8 +120,8 @@
       "id": "18492865399107734",
       "data": "2026-10-23T13:01:11+0000",
       "link": "https://www.instagram.com/reel/De1nafpj8NI/",
-      "views": 5852,
-      "likes": 463,
+      "views": 5925,
+      "likes": 468,
       "comentarios": 0
     },
     {
@@ -233,14 +241,6 @@
       "data": "2026-10-23T05:31:04+0000",
       "link": "https://www.instagram.com/reel/De0z5tEiDxA/",
       "views": 43,
-      "likes": 0,
-      "comentarios": 0
-    },
-    {
-      "id": "17872162959645281",
-      "data": "2026-10-23T05:00:55+0000",
-      "link": "https://www.instagram.com/reel/De0weDgj5KC/",
-      "views": 1,
       "likes": 0,
       "comentarios": 0
     }
