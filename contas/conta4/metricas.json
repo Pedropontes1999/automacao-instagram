@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-24T23:30:28.212Z",
+  "atualizado": "2026-10-25T00:00:35.675Z",
   "seguidores": 9,
   "total_posts": 461,
   "erro": null,
@@ -104,7 +104,7 @@
       "id": "18162275947504186",
       "data": "2026-10-24T06:00:53+0000",
       "link": "https://www.instagram.com/reel/De3cIbHAHHK/",
-      "views": 0,
+      "views": 1,
       "likes": 0,
       "comentarios": 0
     },
@@ -144,7 +144,7 @@
       "id": "17936373339404046",
       "data": "2026-10-24T03:31:01+0000",
       "link": "https://www.instagram.com/reel/De3K9TlFTNl/",
-      "views": 480,
+      "views": 484,
       "likes": 46,
       "comentarios": 0
     },
@@ -255,6 +255,7 @@
     "2026-10-21": 4,
     "2026-10-22": 4,
     "2026-10-23": 7,
-    "2026-10-24": 9
+    "2026-10-24": 9,
+    "2026-10-25": 9
   }
 }
