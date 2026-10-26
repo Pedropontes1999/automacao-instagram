@@ -1,9 +1,17 @@
 {
-  "atualizado": "2026-10-25T23:15:58.274Z",
+  "atualizado": "2026-10-26T00:15:58.799Z",
   "seguidores": 1,
-  "total_posts": 81,
+  "total_posts": 82,
   "erro": null,
   "midias": [
+    {
+      "id": "18109284035190791",
+      "data": "2026-10-26T00:15:51+0000",
+      "link": "https://www.instagram.com/reel/De7-Nx3ESKK/",
+      "views": 0,
+      "likes": 0,
+      "comentarios": 0
+    },
     {
       "id": "18353477854301605",
       "data": "2026-10-25T23:15:50+0000",
@@ -24,8 +32,8 @@
       "id": "18218961001347843",
       "data": "2026-10-25T21:16:23+0000",
       "link": "https://www.instagram.com/reel/De7prAOju4l/",
-      "views": 7,
-      "likes": 0,
+      "views": 18,
+      "likes": 1,
       "comentarios": 0
     },
     {
@@ -48,7 +56,7 @@
       "id": "18024771182924948",
       "data": "2026-10-25T18:15:55+0000",
       "link": "https://www.instagram.com/reel/De7VBYlD5rG/",
-      "views": 30,
+      "views": 31,
       "likes": 1,
       "comentarios": 0
     },
@@ -72,7 +80,7 @@
       "id": "18168040576472501",
       "data": "2026-10-25T15:15:53+0000",
       "link": "https://www.instagram.com/reel/De7Aa7FjFLI/",
-      "views": 27,
+      "views": 28,
       "likes": 0,
       "comentarios": 0
     },
@@ -112,7 +120,7 @@
       "id": "17942390082382077",
       "data": "2026-10-25T10:15:55+0000",
       "link": "https://www.instagram.com/reel/De6eFvaD4pN/",
-      "views": 169,
+      "views": 171,
       "likes": 1,
       "comentarios": 0
     },
@@ -160,7 +168,7 @@
       "id": "17933622879407522",
       "data": "2026-10-25T04:16:14+0000",
       "link": "https://www.instagram.com/reel/De5048hmNBW/",
-      "views": 94,
+      "views": 101,
       "likes": 0,
       "comentarios": 0
     },
@@ -235,20 +243,13 @@
       "views": 0,
       "likes": 0,
       "comentarios": 0
-    },
-    {
-      "id": "18125186195489506",
-      "data": "2026-10-24T18:15:39+0000",
-      "link": "https://www.instagram.com/reel/De4wN92FSYA/",
-      "views": 0,
-      "likes": 0,
-      "comentarios": 0
     }
   ],
   "historico": {
     "2026-10-22": 0,
     "2026-10-23": 0,
     "2026-10-24": 0,
-    "2026-10-25": 1
+    "2026-10-25": 1,
+    "2026-10-26": 1
   }
 }
