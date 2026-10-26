@@ -1,14 +1,22 @@
 {
-  "atualizado": "2026-10-26T00:15:58.799Z",
+  "atualizado": "2026-10-26T01:16:00.506Z",
   "seguidores": 1,
-  "total_posts": 82,
+  "total_posts": 83,
   "erro": null,
   "midias": [
+    {
+      "id": "18097204118112407",
+      "data": "2026-10-26T01:15:53+0000",
+      "link": "https://www.instagram.com/reel/De8FFLEFKUJ/",
+      "views": 0,
+      "likes": 0,
+      "comentarios": 0
+    },
     {
       "id": "18109284035190791",
       "data": "2026-10-26T00:15:51+0000",
       "link": "https://www.instagram.com/reel/De7-Nx3ESKK/",
-      "views": 0,
+      "views": 29,
       "likes": 0,
       "comentarios": 0
     },
@@ -56,7 +64,7 @@
       "id": "18024771182924948",
       "data": "2026-10-25T18:15:55+0000",
       "link": "https://www.instagram.com/reel/De7VBYlD5rG/",
-      "views": 31,
+      "views": 32,
       "likes": 1,
       "comentarios": 0
     },
@@ -80,7 +88,7 @@
       "id": "18168040576472501",
       "data": "2026-10-25T15:15:53+0000",
       "link": "https://www.instagram.com/reel/De7Aa7FjFLI/",
-      "views": 28,
+      "views": 30,
       "likes": 0,
       "comentarios": 0
     },
@@ -120,7 +128,7 @@
       "id": "17942390082382077",
       "data": "2026-10-25T10:15:55+0000",
       "link": "https://www.instagram.com/reel/De6eFvaD4pN/",
-      "views": 171,
+      "views": 172,
       "likes": 1,
       "comentarios": 0
     },
@@ -168,7 +176,7 @@
       "id": "17933622879407522",
       "data": "2026-10-25T04:16:14+0000",
       "link": "https://www.instagram.com/reel/De5048hmNBW/",
-      "views": 101,
+      "views": 102,
       "likes": 0,
       "comentarios": 0
     },
@@ -232,14 +240,6 @@
       "id": "18130301851697625",
       "data": "2026-10-24T20:16:37+0000",
       "link": "https://www.instagram.com/reel/De499rFgZ5P/",
-      "views": 0,
-      "likes": 0,
-      "comentarios": 0
-    },
-    {
-      "id": "18115397459010746",
-      "data": "2026-10-24T19:16:12+0000",
-      "link": "https://www.instagram.com/reel/De43IR1EaZN/",
       "views": 0,
       "likes": 0,
       "comentarios": 0
