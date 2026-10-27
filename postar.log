@@ -6753,3 +6753,5 @@
 [2026-10-27T14:15:18.342Z] [conta5] Postando video_120 (lote 10, post 12/12)
 [2026-10-27T14:16:54.618Z] [conta5] OK - video_120 publicado. media_id=18118678427094563
 [2026-10-27T14:16:54.618Z] [conta5] Legenda trocou para o lote 11. Atualize a bio.
+[2026-10-27T14:20:25.703Z] [conta3] Nenhum vídeo restante para postar.
+[2026-10-27T14:20:26.253Z] [conta3] Aviso "[conta3] Acabaram os vídeos" já está aberto.
