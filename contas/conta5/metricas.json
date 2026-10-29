@@ -1,9 +1,25 @@
 {
-  "atualizado": "2026-10-29T03:15:54.711Z",
+  "atualizado": "2026-10-29T05:15:42.963Z",
   "seguidores": 0,
-  "total_posts": 157,
+  "total_posts": 159,
   "erro": null,
   "midias": [
+    {
+      "id": "18115420400162591",
+      "data": "2026-10-29T05:15:33+0000",
+      "link": "https://www.instagram.com/reel/DfEO7mIiT3_/",
+      "views": 0,
+      "likes": 0,
+      "comentarios": 0
+    },
+    {
+      "id": "18649980052041638",
+      "data": "2026-10-29T04:15:41+0000",
+      "link": "https://www.instagram.com/reel/DfEIERflWBL/",
+      "views": 0,
+      "likes": 0,
+      "comentarios": 0
+    },
     {
       "id": "18642415477006965",
       "data": "2026-10-29T03:15:49+0000",
@@ -32,8 +48,8 @@
       "id": "18129690502881490",
       "data": "2026-10-29T00:16:11+0000",
       "link": "https://www.instagram.com/reel/DfDsoWSiN4w/",
-      "views": 21,
-      "likes": 1,
+      "views": 49,
+      "likes": 4,
       "comentarios": 0
     },
     {
@@ -48,7 +64,7 @@
       "id": "18141559252536405",
       "data": "2026-10-28T22:15:50+0000",
       "link": "https://www.instagram.com/reel/DfDe3kXigMH/",
-      "views": 141,
+      "views": 142,
       "likes": 12,
       "comentarios": 0
     },
@@ -72,7 +88,7 @@
       "id": "18132049798787783",
       "data": "2026-10-28T19:16:22+0000",
       "link": "https://www.instagram.com/reel/DfDKSCOipg5/",
-      "views": 113,
+      "views": 114,
       "likes": 2,
       "comentarios": 0
     },
@@ -224,22 +240,6 @@
       "id": "18131213182685854",
       "data": "2026-10-28T00:16:13+0000",
       "link": "https://www.instagram.com/reel/DfBH2LVEhZQ/",
-      "views": 0,
-      "likes": 0,
-      "comentarios": 0
-    },
-    {
-      "id": "18123663844940353",
-      "data": "2026-10-27T23:15:53+0000",
-      "link": "https://www.instagram.com/reel/DfBA8URkktM/",
-      "views": 0,
-      "likes": 0,
-      "comentarios": 0
-    },
-    {
-      "id": "18109295015252513",
-      "data": "2026-10-27T22:15:51+0000",
-      "link": "https://www.instagram.com/reel/DfA6EwOlb0z/",
       "views": 0,
       "likes": 0,
       "comentarios": 0
