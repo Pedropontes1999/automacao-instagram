@@ -7490,3 +7490,6 @@
 [2026-10-29T04:15:17.096Z] [conta5] Postando video_158 (lote 14, post 2/12)
 [2026-10-29T04:15:46.829Z] [conta5] OK - video_158 publicado. media_id=18649980052041638
 [2026-10-29T04:15:47.084Z] [conta5] Métricas não atualizaram: fetch failed
+[2026-10-29T04:15:22.575Z] [conta2] Postando video_635 (lote 53, post 11/12)
+[2026-10-29T04:16:48.247Z] [conta2] FALHOU video_635: fetch failed
+[2026-10-29T04:25:19.749Z] [conta2] Respondi 15 comentário(s).
