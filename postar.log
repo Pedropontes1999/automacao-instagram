@@ -7487,3 +7487,6 @@
 [2026-10-29T04:00:25.989Z] [conta1] Aviso "[conta1] Acabaram os vídeos" já está aberto.
 [2026-10-29T04:00:31.627Z] [conta4] Nenhum vídeo restante para postar.
 [2026-10-29T04:00:32.466Z] [conta4] Aviso "[conta4] Acabaram os vídeos" já está aberto.
+[2026-10-29T04:15:17.096Z] [conta5] Postando video_158 (lote 14, post 2/12)
+[2026-10-29T04:15:46.829Z] [conta5] OK - video_158 publicado. media_id=18649980052041638
+[2026-10-29T04:15:47.084Z] [conta5] Métricas não atualizaram: fetch failed
