@@ -7476,3 +7476,7 @@
 [2026-10-29T03:30:22.514Z] [conta1] Aviso "[conta1] Acabaram os vídeos" já está aberto.
 [2026-10-29T03:30:28.143Z] [conta4] Nenhum vídeo restante para postar.
 [2026-10-29T03:30:28.762Z] [conta4] Aviso "[conta4] Acabaram os vídeos" já está aberto.
+[2026-10-29T03:45:25.303Z] [conta2] Postando video_634 (lote 53, post 10/12)
+[2026-10-29T03:46:05.790Z] [conta2] OK - video_634 publicado. media_id=17956080069296220
+[2026-10-29T03:46:06.044Z] [conta2] Métricas não atualizaram: fetch failed
+[2026-10-29T03:53:31.993Z] [conta2] Respondi 15 comentário(s).
