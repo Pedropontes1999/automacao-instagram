@@ -1,15 +1,23 @@
 {
-  "atualizado": "2026-10-30T21:15:48.548Z",
+  "atualizado": "2026-10-30T22:15:48.334Z",
   "seguidores": 2,
-  "total_posts": 199,
+  "total_posts": 200,
   "erro": null,
   "midias": [
+    {
+      "id": "18424484308157727",
+      "data": "2026-10-30T22:15:41+0000",
+      "link": "https://www.instagram.com/reel/DfIodUejXmX/",
+      "views": 0,
+      "likes": 0,
+      "comentarios": 0
+    },
     {
       "id": "18167921893473842",
       "data": "2026-10-30T21:15:41+0000",
       "link": "https://www.instagram.com/reel/DfIhlcSlvmI/",
-      "views": 0,
-      "likes": 0,
+      "views": 60,
+      "likes": 6,
       "comentarios": 0
     },
     {
@@ -24,7 +32,7 @@
       "id": "18163612843500571",
       "data": "2026-10-30T19:15:57+0000",
       "link": "https://www.instagram.com/reel/DfIT3Kxia1F/",
-      "views": 157,
+      "views": 158,
       "likes": 11,
       "comentarios": 0
     },
@@ -32,7 +40,7 @@
       "id": "18120648283999760",
       "data": "2026-10-30T18:16:14+0000",
       "link": "https://www.instagram.com/reel/DfIM_3AiV1t/",
-      "views": 176,
+      "views": 178,
       "likes": 4,
       "comentarios": 0
     },
@@ -72,7 +80,7 @@
       "id": "17963705592232175",
       "data": "2026-10-30T13:15:52+0000",
       "link": "https://www.instagram.com/reel/DfHqqPrAVrS/",
-      "views": 126,
+      "views": 127,
       "likes": 6,
       "comentarios": 0
     },
@@ -160,7 +168,7 @@
       "id": "17872759911641670",
       "data": "2026-10-30T02:16:37+0000",
       "link": "https://www.instagram.com/reel/DfGfIcbifVG/",
-      "views": 30,
+      "views": 31,
       "likes": 0,
       "comentarios": 0
     },
@@ -232,14 +240,6 @@
       "id": "18025250522718264",
       "data": "2026-10-29T17:16:12+0000",
       "link": "https://www.instagram.com/reel/DfFhVlriBa9/",
-      "views": 0,
-      "likes": 0,
-      "comentarios": 0
-    },
-    {
-      "id": "17909153334329893",
-      "data": "2026-10-29T16:16:23+0000",
-      "link": "https://www.instagram.com/reel/DfFaehajaNQ/",
       "views": 0,
       "likes": 0,
       "comentarios": 0
