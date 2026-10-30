@@ -1,9 +1,17 @@
 {
-  "atualizado": "2026-10-30T20:16:16.798Z",
+  "atualizado": "2026-10-30T21:15:48.548Z",
   "seguidores": 2,
-  "total_posts": 198,
+  "total_posts": 199,
   "erro": null,
   "midias": [
+    {
+      "id": "18167921893473842",
+      "data": "2026-10-30T21:15:41+0000",
+      "link": "https://www.instagram.com/reel/DfIhlcSlvmI/",
+      "views": 0,
+      "likes": 0,
+      "comentarios": 0
+    },
     {
       "id": "18006489929793839",
       "data": "2026-10-30T20:16:09+0000",
@@ -16,15 +24,15 @@
       "id": "18163612843500571",
       "data": "2026-10-30T19:15:57+0000",
       "link": "https://www.instagram.com/reel/DfIT3Kxia1F/",
-      "views": 7,
-      "likes": 1,
+      "views": 157,
+      "likes": 11,
       "comentarios": 0
     },
     {
       "id": "18120648283999760",
       "data": "2026-10-30T18:16:14+0000",
       "link": "https://www.instagram.com/reel/DfIM_3AiV1t/",
-      "views": 175,
+      "views": 176,
       "likes": 4,
       "comentarios": 0
     },
@@ -32,7 +40,7 @@
       "id": "18128641123845802",
       "data": "2026-10-30T17:15:52+0000",
       "link": "https://www.instagram.com/reel/DfIGH37mIaY/",
-      "views": 153,
+      "views": 155,
       "likes": 9,
       "comentarios": 0
     },
@@ -152,7 +160,7 @@
       "id": "17872759911641670",
       "data": "2026-10-30T02:16:37+0000",
       "link": "https://www.instagram.com/reel/DfGfIcbifVG/",
-      "views": 29,
+      "views": 30,
       "likes": 0,
       "comentarios": 0
     },
@@ -168,7 +176,7 @@
       "id": "17940815172391762",
       "data": "2026-10-30T00:15:50+0000",
       "link": "https://www.instagram.com/reel/DfGRZX1ndak/",
-      "views": 26,
+      "views": 27,
       "likes": 0,
       "comentarios": 0
     },
@@ -234,14 +242,6 @@
       "link": "https://www.instagram.com/reel/DfFaehajaNQ/",
       "views": 0,
       "likes": 0,
-      "comentarios": 0
-    },
-    {
-      "id": "18042147515834223",
-      "data": "2026-10-29T15:15:43+0000",
-      "link": "https://www.instagram.com/reel/DfFTmgGlQDA/",
-      "views": 143,
-      "likes": 8,
       "comentarios": 0
     }
   ],
