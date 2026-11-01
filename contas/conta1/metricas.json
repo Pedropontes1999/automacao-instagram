@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-10-31T23:30:26.431Z",
-  "seguidores": 13123,
+  "atualizado": "2026-11-01T00:00:30.222Z",
+  "seguidores": 13127,
   "total_posts": 985,
   "erro": null,
   "midias": [
@@ -8,7 +8,7 @@
       "id": "18182304718442571",
       "data": "2026-10-26T20:31:01+0000",
       "link": "https://www.instagram.com/reel/De-JRnLDm0q/",
-      "views": 791,
+      "views": 792,
       "likes": 14,
       "comentarios": 3
     },
@@ -96,7 +96,7 @@
       "id": "18132568843689502",
       "data": "2026-10-26T15:01:44+0000",
       "link": "https://www.instagram.com/reel/De9jl1fAg14/",
-      "views": 812,
+      "views": 813,
       "likes": 2,
       "comentarios": 0
     },
@@ -120,7 +120,7 @@
       "id": "17991951357098032",
       "data": "2026-10-26T13:31:01+0000",
       "link": "https://www.instagram.com/reel/De9ZNzJiAuX/",
-      "views": 1185,
+      "views": 1188,
       "likes": 42,
       "comentarios": 0
     },
@@ -128,7 +128,7 @@
       "id": "18089012096278273",
       "data": "2026-10-26T13:01:45+0000",
       "link": "https://www.instagram.com/reel/De9V3rJgGfu/",
-      "views": 1597,
+      "views": 1598,
       "likes": 12,
       "comentarios": 0
     },
@@ -136,7 +136,7 @@
       "id": "17884252977527332",
       "data": "2026-10-26T12:30:56+0000",
       "link": "https://www.instagram.com/reel/De9SVp3jAPP/",
-      "views": 2942,
+      "views": 2943,
       "likes": 98,
       "comentarios": 0
     },
@@ -152,7 +152,7 @@
       "id": "18152967535498813",
       "data": "2026-10-26T11:31:09+0000",
       "link": "https://www.instagram.com/reel/De9LfrmD7qp/",
-      "views": 1333,
+      "views": 1336,
       "likes": 14,
       "comentarios": 0
     },
@@ -160,7 +160,7 @@
       "id": "17923707762443496",
       "data": "2026-10-26T11:01:37+0000",
       "link": "https://www.instagram.com/reel/De9IHWAgRi6/",
-      "views": 1572,
+      "views": 1573,
       "likes": 15,
       "comentarios": 0
     },
@@ -184,7 +184,7 @@
       "id": "18374608282210847",
       "data": "2026-10-26T09:30:48+0000",
       "link": "https://www.instagram.com/reel/De89v0yiuJv/",
-      "views": 1979,
+      "views": 1984,
       "likes": 69,
       "comentarios": 2
     },
@@ -262,6 +262,7 @@
     "2026-10-28": 12395,
     "2026-10-29": 12585,
     "2026-10-30": 12879,
-    "2026-10-31": 13123
+    "2026-10-31": 13123,
+    "2026-11-01": 13127
   }
 }
