@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-11-01T14:00:27.212Z",
-  "seguidores": 13278,
+  "atualizado": "2026-11-01T14:30:26.910Z",
+  "seguidores": 13284,
   "total_posts": 985,
   "erro": null,
   "midias": [
@@ -16,7 +16,7 @@
       "id": "17908396515567411",
       "data": "2026-10-26T20:01:00+0000",
       "link": "https://www.instagram.com/reel/De-F2RAElss/",
-      "views": 1945,
+      "views": 1946,
       "likes": 25,
       "comentarios": 0
     },
@@ -80,7 +80,7 @@
       "id": "18095366840466414",
       "data": "2026-10-26T16:01:21+0000",
       "link": "https://www.instagram.com/reel/De9qahzAa1b/",
-      "views": 411,
+      "views": 413,
       "likes": 0,
       "comentarios": 0
     },
@@ -112,7 +112,7 @@
       "id": "18207035746375014",
       "data": "2026-10-26T14:01:03+0000",
       "link": "https://www.instagram.com/reel/De9cp-UgslH/",
-      "views": 3000,
+      "views": 3002,
       "likes": 63,
       "comentarios": 0
     },
@@ -120,7 +120,7 @@
       "id": "17991951357098032",
       "data": "2026-10-26T13:31:01+0000",
       "link": "https://www.instagram.com/reel/De9ZNzJiAuX/",
-      "views": 1223,
+      "views": 1227,
       "likes": 42,
       "comentarios": 0
     },
@@ -184,7 +184,7 @@
       "id": "18374608282210847",
       "data": "2026-10-26T09:30:48+0000",
       "link": "https://www.instagram.com/reel/De89v0yiuJv/",
-      "views": 2010,
+      "views": 2011,
       "likes": 70,
       "comentarios": 2
     },
@@ -200,7 +200,7 @@
       "id": "17993280765059202",
       "data": "2026-10-26T08:30:56+0000",
       "link": "https://www.instagram.com/reel/De824fhCBBW/",
-      "views": 680,
+      "views": 683,
       "likes": 13,
       "comentarios": 0
     },
@@ -232,8 +232,8 @@
       "id": "17995107467845261",
       "data": "2026-10-26T06:30:58+0000",
       "link": "https://www.instagram.com/reel/De8pJODgHNR/",
-      "views": 1442,
-      "likes": 17,
+      "views": 1443,
+      "likes": 18,
       "comentarios": 0
     },
     {
@@ -263,6 +263,6 @@
     "2026-10-29": 12585,
     "2026-10-30": 12879,
     "2026-10-31": 13123,
-    "2026-11-01": 13278
+    "2026-11-01": 13284
   }
 }
