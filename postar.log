@@ -9533,3 +9533,6 @@
 [2026-11-02T08:00:42.491Z] [conta1] Aviso "[conta1] Acabaram os vídeos" já está aberto.
 [2026-11-02T08:15:22.299Z] [conta2] Nenhum vídeo restante para postar.
 [2026-11-02T08:15:22.984Z] [conta2] Aviso "[conta2] Acabaram os vídeos" já está aberto.
+[2026-11-02T08:15:26.171Z] [conta5] Postando video_233 (lote 20, post 5/12)
+[2026-11-02T08:16:40.205Z] [conta5] FALHOU video_233: Processamento falhou no lado da Meta
+[2026-11-02T08:16:40.873Z] [conta5] Aviso "[conta5] Falha ao postar" já está aberto.
