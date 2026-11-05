@@ -1,9 +1,9 @@
 {
   "dia": "2026-11-05",
-  "hoje": 165,
-  "erro": "Please reduce the amount of data you're asking for, then retry your request",
-  "total": 4180,
-  "atualizado": "2026-11-05T05:45:24.725Z",
+  "hoje": 180,
+  "erro": null,
+  "total": 4195,
+  "atualizado": "2026-11-05T06:24:17.041Z",
   "varredura": {
     "posts_varridos": 100,
     "depois": "QVFIVFExa293NThjbnBMQ2lESkRjYWxGbXJHVTlGakZAMQVcteVB4M1kzQ1lFN2F3Q0RYdFp6c241R1NidzBCQXI1OHVSdnJTa29UN3Y1ZAkZAIRW1PUzZAWVm1n"
