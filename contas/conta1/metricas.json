@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-11-12T07:30:24.188Z",
-  "seguidores": 16807,
+  "atualizado": "2026-11-12T08:00:27.731Z",
+  "seguidores": 16809,
   "total_posts": 985,
   "erro": null,
   "midias": [
@@ -8,7 +8,7 @@
       "id": "18182304718442571",
       "data": "2026-10-26T20:31:01+0000",
       "link": "https://www.instagram.com/reel/De-JRnLDm0q/",
-      "views": 2568,
+      "views": 2569,
       "likes": 36,
       "comentarios": 3
     },
@@ -16,7 +16,7 @@
       "id": "17908396515567411",
       "data": "2026-10-26T20:01:00+0000",
       "link": "https://www.instagram.com/reel/De-F2RAElss/",
-      "views": 3523,
+      "views": 3524,
       "likes": 43,
       "comentarios": 0
     },
@@ -64,7 +64,7 @@
       "id": "17952202635279071",
       "data": "2026-10-26T17:01:00+0000",
       "link": "https://www.instagram.com/reel/De9xP5WkQcI/",
-      "views": 1268,
+      "views": 1269,
       "likes": 2,
       "comentarios": 0
     },
@@ -72,7 +72,7 @@
       "id": "18123712474937175",
       "data": "2026-10-26T16:31:03+0000",
       "link": "https://www.instagram.com/reel/De9tzxBDGGA/",
-      "views": 1208,
+      "views": 1209,
       "likes": 3,
       "comentarios": 0
     },
@@ -80,7 +80,7 @@
       "id": "18095366840466414",
       "data": "2026-10-26T16:01:21+0000",
       "link": "https://www.instagram.com/reel/De9qahzAa1b/",
-      "views": 1044,
+      "views": 1045,
       "likes": 4,
       "comentarios": 0
     },
@@ -88,7 +88,7 @@
       "id": "18347898538283057",
       "data": "2026-10-26T15:31:48+0000",
       "link": "https://www.instagram.com/reel/De9nDcJIFht/",
-      "views": 2000,
+      "views": 2001,
       "likes": 22,
       "comentarios": 0
     },
@@ -96,7 +96,7 @@
       "id": "18132568843689502",
       "data": "2026-10-26T15:01:44+0000",
       "link": "https://www.instagram.com/reel/De9jl1fAg14/",
-      "views": 1543,
+      "views": 1545,
       "likes": 4,
       "comentarios": 0
     },
@@ -274,6 +274,6 @@
     "2026-11-09": 16243,
     "2026-11-10": 16495,
     "2026-11-11": 16745,
-    "2026-11-12": 16807
+    "2026-11-12": 16809
   }
 }
