@@ -1,11 +1,11 @@
 {
   "dia": "2026-11-13",
-  "hoje": 15,
+  "hoje": 30,
   "varredura": {
     "posts_varridos": 256,
     "depois": "QVFIVE40cndfMWl6ajFUNVY1NWNmbTg1RUE1d2R6QlZADMVhuVkZAyOEhPUFJLbklLTzRHc1JmUWFTS21OREJuSWViVTA4RkZA1RjlHWmpJRllHM3llbWZAfemNR"
   },
-  "erro": "An unknown error occurred",
-  "total": 5238,
-  "atualizado": "2026-11-13T00:51:09.865Z"
+  "erro": null,
+  "total": 5253,
+  "atualizado": "2026-11-13T01:30:27.375Z"
 }
