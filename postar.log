@@ -15232,3 +15232,5 @@
 [2026-11-13T22:15:16.162Z] [conta5] Postando video_233 (lote 20, post 5/12)
 [2026-11-13T22:16:28.607Z] [conta5] FALHOU video_233: Processamento falhou no lado da Meta
 [2026-11-13T22:16:29.241Z] [conta5] Aviso "[conta5] Falha ao postar" já está aberto.
+[2026-11-13T22:20:24.073Z] [conta3] Nenhum vídeo restante para postar.
+[2026-11-13T22:20:25.275Z] [conta3] Aviso "[conta3] Acabaram os vídeos" já está aberto.
