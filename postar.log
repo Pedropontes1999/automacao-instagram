@@ -16061,3 +16061,5 @@
 [2026-11-15T14:01:22.568Z] [conta2] Postando video_764 (lote 64, post 8/12)
 [2026-11-15T14:02:35.156Z] [conta2] FALHOU video_764: Processamento falhou no lado da Meta
 [2026-11-15T14:02:35.635Z] [conta2] Aviso "[conta2] Falha ao postar" já está aberto.
+[2026-11-15T14:05:27.851Z] [conta2] Postando video_764 (lote 64, post 8/12)
+[2026-11-15T14:06:58.396Z] [conta2] OK - video_764 publicado. media_id=18122636032963078
