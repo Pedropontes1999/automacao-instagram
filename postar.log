@@ -16053,3 +16053,6 @@
 [2026-11-15T13:50:20.962Z] [conta3] Aviso "[conta3] Acabaram os vídeos" já está aberto.
 [2026-11-15T13:52:02.584Z] [conta2] Postando video_764 (lote 64, post 8/12)
 [2026-11-15T13:53:15.512Z] [conta2] FALHOU video_764: Processamento falhou no lado da Meta
+[2026-11-15T13:54:16.442Z] [conta2] Postando video_764 (lote 64, post 8/12)
+[2026-11-15T13:55:59.202Z] [conta2] FALHOU video_764: Processamento falhou no lado da Meta
+[2026-11-15T13:55:59.681Z] [conta2] Aviso "[conta2] Falha ao postar" já está aberto.
