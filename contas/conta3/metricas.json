@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-11-14T23:50:23.599Z",
-  "seguidores": 25851,
+  "atualizado": "2026-11-15T00:20:20.850Z",
+  "seguidores": 25867,
   "total_posts": 210,
   "erro": null,
   "midias": [
@@ -8,23 +8,23 @@
       "id": "18121058485822612",
       "data": "2026-10-16T13:51:00+0000",
       "link": "https://www.instagram.com/reel/DejrjMGD-h7/",
-      "views": 19049,
-      "likes": 354,
+      "views": 19057,
+      "likes": 355,
       "comentarios": 0
     },
     {
       "id": "18105997970364877",
       "data": "2026-10-16T13:21:00+0000",
       "link": "https://www.instagram.com/reel/DejoHh_AUAu/",
-      "views": 21855,
-      "likes": 483,
+      "views": 21863,
+      "likes": 484,
       "comentarios": 6
     },
     {
       "id": "18098598347638428",
       "data": "2026-10-16T12:51:09+0000",
       "link": "https://www.instagram.com/reel/Dejkrr2D80w/",
-      "views": 17349,
+      "views": 17356,
       "likes": 315,
       "comentarios": 2
     },
@@ -32,7 +32,7 @@
       "id": "18116193428049020",
       "data": "2026-10-16T12:21:20+0000",
       "link": "https://www.instagram.com/reel/DejhSH9EgPB/",
-      "views": 20536,
+      "views": 20541,
       "likes": 366,
       "comentarios": 8
     },
@@ -40,15 +40,15 @@
       "id": "18123345046916438",
       "data": "2026-10-16T11:51:45+0000",
       "link": "https://www.instagram.com/reel/Dejd65ACtCV/",
-      "views": 19984,
-      "likes": 325,
+      "views": 19990,
+      "likes": 326,
       "comentarios": 0
     },
     {
       "id": "18095053814469959",
       "data": "2026-10-16T11:21:00+0000",
       "link": "https://www.instagram.com/reel/DejaY_qkVAl/",
-      "views": 14229,
+      "views": 14232,
       "likes": 325,
       "comentarios": 8
     },
@@ -56,31 +56,31 @@
       "id": "18101539964056613",
       "data": "2026-10-16T10:51:29+0000",
       "link": "https://www.instagram.com/reel/DejXA2KEQcU/",
-      "views": 15192,
-      "likes": 352,
+      "views": 15194,
+      "likes": 353,
       "comentarios": 2
     },
     {
       "id": "18448082911133024",
       "data": "2026-10-16T10:20:57+0000",
       "link": "https://www.instagram.com/reel/DejTgulmNGf/",
-      "views": 814830,
-      "likes": 84924,
+      "views": 815147,
+      "likes": 84964,
       "comentarios": 516
     },
     {
       "id": "18006589773005829",
       "data": "2026-10-16T09:50:48+0000",
       "link": "https://www.instagram.com/reel/DejQFS9lY9A/",
-      "views": 555221,
-      "likes": 52572,
-      "comentarios": 295
+      "views": 555285,
+      "likes": 52578,
+      "comentarios": 296
     },
     {
       "id": "18387414007224862",
       "data": "2026-10-16T09:21:00+0000",
       "link": "https://www.instagram.com/reel/DejMpm4FS_R/",
-      "views": 10344,
+      "views": 10345,
       "likes": 179,
       "comentarios": 7
     },
@@ -88,7 +88,7 @@
       "id": "18143595451593548",
       "data": "2026-10-16T08:51:00+0000",
       "link": "https://www.instagram.com/reel/DejJN-rjmnt/",
-      "views": 9384,
+      "views": 9385,
       "likes": 91,
       "comentarios": 0
     },
@@ -96,7 +96,7 @@
       "id": "18021029507939532",
       "data": "2026-10-16T08:21:00+0000",
       "link": "https://www.instagram.com/reel/DejFyMej2oL/",
-      "views": 9872,
+      "views": 9873,
       "likes": 237,
       "comentarios": 4
     },
@@ -112,7 +112,7 @@
       "id": "18105786683271795",
       "data": "2026-10-16T07:20:57+0000",
       "link": "https://www.instagram.com/reel/Dei-6fhgcnL/",
-      "views": 7068,
+      "views": 7069,
       "likes": 102,
       "comentarios": 0
     },
@@ -200,8 +200,8 @@
       "id": "17950815552293478",
       "data": "2026-10-16T01:51:01+0000",
       "link": "https://www.instagram.com/reel/DeiZKfwEul9/",
-      "views": 608720,
-      "likes": 47801,
+      "views": 608842,
+      "likes": 47819,
       "comentarios": 877
     },
     {
@@ -276,6 +276,7 @@
     "2026-11-11": 24250,
     "2026-11-12": 24669,
     "2026-11-13": 25215,
-    "2026-11-14": 25851
+    "2026-11-14": 25851,
+    "2026-11-15": 25867
   }
 }
