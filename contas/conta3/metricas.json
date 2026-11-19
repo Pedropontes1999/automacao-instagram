@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-11-19T04:50:21.259Z",
-  "seguidores": 27812,
+  "atualizado": "2026-11-19T05:20:21.473Z",
+  "seguidores": 27822,
   "total_posts": 210,
   "erro": null,
   "midias": [
@@ -8,7 +8,7 @@
       "id": "18121058485822612",
       "data": "2026-10-16T13:51:00+0000",
       "link": "https://www.instagram.com/reel/DejrjMGD-h7/",
-      "views": 20792,
+      "views": 20795,
       "likes": 398,
       "comentarios": 2
     },
@@ -16,7 +16,7 @@
       "id": "18105997970364877",
       "data": "2026-10-16T13:21:00+0000",
       "link": "https://www.instagram.com/reel/DejoHh_AUAu/",
-      "views": 23807,
+      "views": 23809,
       "likes": 534,
       "comentarios": 6
     },
@@ -64,23 +64,23 @@
       "id": "18448082911133024",
       "data": "2026-10-16T10:20:57+0000",
       "link": "https://www.instagram.com/reel/DejTgulmNGf/",
-      "views": 891196,
-      "likes": 94300,
+      "views": 891343,
+      "likes": 94320,
       "comentarios": 591
     },
     {
       "id": "18006589773005829",
       "data": "2026-10-16T09:50:48+0000",
       "link": "https://www.instagram.com/reel/DejQFS9lY9A/",
-      "views": 573412,
-      "likes": 54664,
+      "views": 573451,
+      "likes": 54670,
       "comentarios": 317
     },
     {
       "id": "18387414007224862",
       "data": "2026-10-16T09:21:00+0000",
       "link": "https://www.instagram.com/reel/DejMpm4FS_R/",
-      "views": 11160,
+      "views": 11161,
       "likes": 194,
       "comentarios": 7
     },
@@ -176,7 +176,7 @@
       "id": "18131354029701458",
       "data": "2026-10-16T03:20:59+0000",
       "link": "https://www.instagram.com/reel/Deijcw1CY5h/",
-      "views": 6584,
+      "views": 6585,
       "likes": 147,
       "comentarios": 2
     },
@@ -200,9 +200,9 @@
       "id": "17950815552293478",
       "data": "2026-10-16T01:51:01+0000",
       "link": "https://www.instagram.com/reel/DeiZKfwEul9/",
-      "views": 630490,
-      "likes": 49628,
-      "comentarios": 924
+      "views": 630563,
+      "likes": 49637,
+      "comentarios": 925
     },
     {
       "id": "18356689363216766",
@@ -281,6 +281,6 @@
     "2026-11-16": 26893,
     "2026-11-17": 27362,
     "2026-11-18": 27721,
-    "2026-11-19": 27812
+    "2026-11-19": 27822
   }
 }
