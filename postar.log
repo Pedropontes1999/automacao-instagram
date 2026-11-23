@@ -18213,3 +18213,6 @@
 [2026-11-23T16:50:25.412Z] [conta3] Falha ao avisar via issue: fetch failed
 [2026-11-23T17:00:32.984Z] [conta4] Nenhum vídeo restante para postar.
 [2026-11-23T17:00:33.560Z] [conta4] Aviso "[conta4] Acabaram os vídeos" já está aberto.
+[2026-11-23T17:10:21.114Z] [conta2] Postando video_959 (lote 80, post 11/12)
+[2026-11-23T17:11:02.199Z] [conta2] OK - video_959 publicado. media_id=17937211401143333
+[2026-11-23T17:15:26.442Z] [conta2] Respondi 8 comentário(s).
