@@ -1,6 +1,6 @@
 {
-  "atualizado": "2026-11-27T06:50:23.492Z",
-  "seguidores": 32285,
+  "atualizado": "2026-11-27T07:20:22.461Z",
+  "seguidores": 32289,
   "total_posts": 210,
   "erro": null,
   "midias": [
@@ -8,7 +8,7 @@
       "id": "18121058485822612",
       "data": "2026-10-16T13:51:00+0000",
       "link": "https://www.instagram.com/reel/DejrjMGD-h7/",
-      "views": 23752,
+      "views": 23754,
       "likes": 454,
       "comentarios": 4
     },
@@ -16,7 +16,7 @@
       "id": "18105997970364877",
       "data": "2026-10-16T13:21:00+0000",
       "link": "https://www.instagram.com/reel/DejoHh_AUAu/",
-      "views": 27170,
+      "views": 27172,
       "likes": 608,
       "comentarios": 6
     },
@@ -40,7 +40,7 @@
       "id": "18123345046916438",
       "data": "2026-10-16T11:51:45+0000",
       "link": "https://www.instagram.com/reel/Dejd65ACtCV/",
-      "views": 24351,
+      "views": 24352,
       "likes": 387,
       "comentarios": 0
     },
@@ -64,16 +64,16 @@
       "id": "18448082911133024",
       "data": "2026-10-16T10:20:57+0000",
       "link": "https://www.instagram.com/reel/DejTgulmNGf/",
-      "views": 1006886,
-      "likes": 107692,
+      "views": 1007054,
+      "likes": 107708,
       "comentarios": 651
     },
     {
       "id": "18006589773005829",
       "data": "2026-10-16T09:50:48+0000",
       "link": "https://www.instagram.com/reel/DejQFS9lY9A/",
-      "views": 593453,
-      "likes": 56645,
+      "views": 593487,
+      "likes": 56648,
       "comentarios": 331
     },
     {
@@ -200,9 +200,9 @@
       "id": "17950815552293478",
       "data": "2026-10-16T01:51:01+0000",
       "link": "https://www.instagram.com/reel/DeiZKfwEul9/",
-      "views": 676181,
-      "likes": 53293,
-      "comentarios": 1013
+      "views": 676261,
+      "likes": 53302,
+      "comentarios": 1014
     },
     {
       "id": "18356689363216766",
@@ -289,6 +289,6 @@
     "2026-11-24": 31234,
     "2026-11-25": 31666,
     "2026-11-26": 32162,
-    "2026-11-27": 32285
+    "2026-11-27": 32289
   }
 }
